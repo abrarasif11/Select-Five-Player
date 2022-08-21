@@ -1,0 +1,27 @@
+#heading-font{
+    font-family: 'Berkshire Swash', cursive;
+}
+#text-font{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    padding-left: 300px;
+    font-family: 'Poppins', sans-serif;
+}
+.banner-img{
+    position: absolute;
+width: 300px;
+height: 374.76px;
+left: -4px;
+top: 29px;
+padding-left: 3px;
+} 
+.banner-img2{
+    position: absolute;
+    left: 89.5%;
+    right: -3.41%;
+    top: 30%;
+    bottom: 79.08%;
+    
+    background: url(.png);
+    border-radius: 14.4167px;
+}
