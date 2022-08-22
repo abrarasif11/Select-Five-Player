@@ -70,8 +70,15 @@ padding-left: 3px;
 
 }
 .player-box{
-    margin-left: 35px;
-    
+    margin-left: 28px;
+    font-weight: 800;
+    margin-right: 15px;
+
+}
+.player-box3{
+    margin-left: 28px;
+    font-weight: 800;
+    margin-right: 15px;
 }
 .calc-btn{
     margin-top: 10px;
