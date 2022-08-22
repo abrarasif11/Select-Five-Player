@@ -59,10 +59,27 @@ padding-left: 3px;
     width: 264px;
     height: 514px;
     margin-left: 30px;
+    margin-top: 40px;
 }
 .select-box{
     width: 264px;
-    height: 371px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 30px;
     background-color: black;
 
+}
+.player-box{
+    margin-left: 35px;
+    
+}
+.calc-btn{
+    margin-top: 10px;
+    margin-left: 45px;
+    background-color: #015196;
+    padding-left: 50px;
+    border: none;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
