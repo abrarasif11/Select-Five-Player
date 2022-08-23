@@ -101,9 +101,10 @@ padding-left: 3px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.total{
-    color: #FF5E19;
-}
+
 .list-underline{
     margin-left: 55px;
+}
+.select-btn:disabled{
+    background-color: gray;
 }
