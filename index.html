@@ -37,7 +37,7 @@
             <div class="card-body">
               <h5 class="card-title text-light text-center" style=" font-family: 'Poppins', sans-serif;">Lionel Messi</h5>
               <p class="card-text text-light text-center" style=" font-family: 'Poppins', sans-serif;">136 Goals 220 Assist</p>
-              <button class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;">Select</button>
+              <button id="Messi-btn" class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;" onclick="addPlayerName(this)">Select</button>
             </div>
           </div>
           <div class="card">
@@ -45,7 +45,7 @@
             <div class="card-body">
               <h5 class="card-title text-center text-light" style=" font-family: 'Poppins', sans-serif;">Cristiano Ronaldo</h5>
               <p class="card-text text-center text-light" style=" font-family: 'Poppins', sans-serif;">100 Goals 170 Assist</p>
-              <button class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;">Select</button>
+              <button  class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;"  onclick="addPlayerName(this)" >Select</button>
             </div>
           </div>
           <div class="card">
@@ -53,24 +53,18 @@
             <div class="card-body">
               <h5 class="card-title text-center text-light" style=" font-family: 'Poppins', sans-serif;">Robert Lewandski</h5>
               <p class="card-text text-center text-light" style=" font-family: 'Poppins', sans-serif;">96 Goals 110 Assist</p>
-              <button class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;">Select</button>
+              <button class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;" onclick="addPlayerName(this)" >Select</button>
             </div>
           </div>
         </div>
         <!-- List-Box-Section -->
         <div class="select-box">
-          <h5 class="text-light text-center mt-3 " style=" font-family: 'Poppins', sans-serif;">Select - 5</h5>
-          <ol class="text-light mt-3 ms-4">
-            <li style=" font-family: 'Poppins', sans-serif;">Lionel Messi</li>
-            <br>
-            <li style=" font-family: 'Poppins', sans-serif;">Cristiano Ronaldo</li>
-            <br>
-            <li style=" font-family: 'Poppins', sans-serif;">Robert Lewandski</li>
-            <br>
-            <li style=" font-family: 'Poppins', sans-serif;">Mohammed Salah</li>
-            <br>
-            <li style=" font-family: 'Poppins', sans-serif;">Karim Benzema</li>
+          <h5 class="text-light text-center mt-4 " style=" font-family: 'Poppins', sans-serif;">Select - 5</h5>
+          <img class="list-underline" src="images/Ureg-Ureg Marker.png" alt="">
+          <ol id="player-list" class="text-light mt-3 ms-4" style=" font-family: 'Poppins', sans-serif;">
+
           </ol>
+          
         </div>
         </section>
       <!-- card Section - 2-->
@@ -81,7 +75,7 @@
             <div class="card-body">
               <h5 class="card-title text-light text-center" style=" font-family: 'Poppins', sans-serif;">Mohammed Salah</h5>
               <p class="card-text text-light text-center" style=" font-family: 'Poppins', sans-serif;">77 Goals 97 Assist</p>
-              <button class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;">Select</button>
+              <button class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;" onclick="addPlayerName(this)" >Select</button>
             </div>
           </div>
           <div class="card">
@@ -89,7 +83,7 @@
             <div class="card-body">
               <h5 class="card-title text-center text-light" style=" font-family: 'Poppins', sans-serif;">Karim Benzema</h5>
               <p class="card-text text-center text-light" style=" font-family: 'Poppins', sans-serif;">67 Goals 100 Assist</p>
-              <button class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;">Select</button>
+              <button class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;" onclick="addPlayerName(this)" >Select</button>
             </div>
           </div>
           <div class="card">
@@ -97,21 +91,22 @@
             <div class="card-body">
               <h5 class="card-title text-light text-center" style=" font-family: 'Poppins', sans-serif;">Sadio Mane</h5>
               <p class="card-text text-center text-light" style=" font-family: 'Poppins', sans-serif;">56 Goals 82 Assist</p>
-              <button class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;">Select</button>
+              <button class="select-btn text-light" style=" font-family: 'Poppins', sans-serif;" onclick="addPlayerName(this)" >Select</button>
             </div>
           </div>
         </div>
         <!-- Calculation Box -->
         <div class="calc-box">
           <h3 class="text-light mt-4 text-center" style=" font-family: 'Poppins', sans-serif;">Budget</h3>
+          
           <p class="text-light mt-4 text-center" style=" font-family: 'Poppins', sans-serif;">Per Player</p>
-          <input id="salary-field" class="player-box tex text-center" style=" font-family: 'Poppins', sans-serif;" type="text" placeholder="1000">
+          <input id="salary-field" class="player-box tex text-center" style=" font-family: 'Poppins', sans-serif;" type="text" placeholder="">
           <button id="btn-calculate" class="calc-btn text-light" style=" font-family: 'Poppins', sans-serif;">Calculate</button>
           <p style=" font-family: 'Poppins', sans-serif;" class="text-center text-light mt-4">Player Expenses $<span id="expences-total">00</span></p>
           <p class="text-light mt-3 text-center" style=" font-family: 'Poppins', sans-serif;">Manager</p>
-          <input class="player-box text-center" style=" font-family: 'Poppins', sans-serif;" type="text" placeholder="2000">
+          <input id="manager-field" class="player-box text-center" style=" font-family: 'Poppins', sans-serif;" type="text" placeholder="">
           <p class="text-light mt-2 text-center" style=" font-family: 'Poppins', sans-serif;">Coach</p>
-          <input class="player-box3 text-center" style=" font-family: 'Poppins', sans-serif;" type="text" placeholder="4000">
+          <input id="coach-field" class="player-box3 text-center" style=" font-family: 'Poppins', sans-serif;" type="text" placeholder="">
           <button id="calc-total-btn" class="calc-total-btn text-light d-inline" style=" font-family: 'Poppins', sans-serif;">Calculate Total</button>
           <p style=" font-family: 'Poppins', sans-serif;" class="text-center text-light mt-4">Total <span id="total-fee" class="total">$00</span></p>
         </div>

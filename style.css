@@ -67,7 +67,7 @@ padding-left: 3px;
     margin-top: 40px;
     margin-left: 30px;
     background-color: black;
-
+    
 }
 .player-box{
     margin-left: 28px;
@@ -101,4 +101,7 @@ padding-left: 3px;
 }
 .total{
     color: #FF5E19;
+}
+.list-underline{
+    margin-left: 55px;
 }

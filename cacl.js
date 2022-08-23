@@ -1,17 +1,18 @@
-// ------ Player Expences ----- //
+// *********Player List********** //
+function addPlayerName(element){
+    const playerName = 
+    element.parentNode.parentNode.children[1].children[0].innerText;
 
-document.getElementById('btn-calculate').addEventListener('click', function(){
-    let totalPlayers = 5;
-    const totalExpences = totalPlayers * 1000;
-    const expencesTotal = document.getElementById('expences-total');
-    expencesTotal.innerText = totalExpences;
-})
-// --------- Total Fee ------- //
+    const playerListElement = document.getElementById('player-list');
+    const newPlayer = document.createElement("li");
+    newPlayer.innerText = playerName;
+    playerListElement.appendChild(newPlayer);
 
-document.getElementById('calc-total-btn').addEventListener('click',function(){
-    let managerFee = 2000;
-    let coachFee = 4000; 
-    const totalFee = 5000 + managerFee + coachFee;
-    const totalElementFee = document.getElementById('total-fee');
-    totalElementFee.innerText = totalFee;
-})
+    const listSize = document.getElementById('player-list').childNodes;
+    const numberofChilds = listSize.length;
+    if(numberofChilds > 6){
+        alert("Your Limit is Up. Cannot Select More");
+    }
+    onclick = element.disabled = "true";
+}
+// ********** Calculation Part ******* //
